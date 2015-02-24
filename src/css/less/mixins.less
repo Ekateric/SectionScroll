@@ -1,0 +1,44 @@
+/* MIXINS.less */
+.clearfix {
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.ib {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	border-radius:         @radius;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	box-shadow:         @string;
+}
+
+.transition (@transition) {
+	transition:      @transition;
+}
+
+.opacity(@opacity: 1) {
+	@ieOpacity: (@opacity * 100);
+	filter: ~"alpha(opacity=@{ieOpacity})";
+	-ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieOpacity})";
+	opacity: @opacity;
+}
+
+.nofilter {
+	.ie9 & {
+		filter: none;
+	}
+}

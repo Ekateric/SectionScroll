@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>		<html class="no-js ie8"> <![endif]-->
+<!--[if gte IE 9]>     	<html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 	<html class="no-js"> <!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>SectionScroll jQuery Plugin Demo</title>
+	<meta name="description" content="SectionScroll is a simple JQuery plugin for sites consisting of multiple full screen sections">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=800">
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen, projection, print">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		if (typeof jQuery == 'undefined') {
+			document.write(unescape("%3Cscript src='../js/jquery-1.10.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+	</script>
+	<script src="../js/vendor/modernizr-2.8.3.custom.js"></script>
+</head>
+<body>
+
+	<!-- Main Wrapper -->
+	<div class = "wrapper ">
+		<!-- Header -->
+		<header role = "banner" class="header">
+			<div class = "container">
+				<h1 class="page-title"><span class="page-title__selection">SectionScroll</span> jQuery plugin</h1>
+			</div>
+		</header>
+		<div class="sections-wrap">
+			<section class="sections-item sections-item_1" id="section_1">
+				<div class="sections-item__title sections-item__title_1">Section 1</div>
+			</section>
+			<section class="sections-item sections-item_2" id="section_2">
+				<div class="sections-item__title sections-item__title_2">Section 2</div>
+			</section>
+			<section class="sections-item sections-item_3" id="section_3">
+				<div class="sections-item__title sections-item__title_3">Section 3</div>
+			</section>
+		</div>
+
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item"><a class="navigation__link" href="#section_1">Section 1</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="#section_2">Section 2</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="#section_3">Section 3</a></li>
+			</ul>
+		</nav>
+
+	</div>
+
+	<script src="../js/main.js"></script>
+</body>
+</html>
