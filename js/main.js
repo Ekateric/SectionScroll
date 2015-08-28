@@ -157,6 +157,7 @@
     SectionScroll.prototype.changeAnchor = function() {
         var _this = this,
             hashMass = window.location.hash.replace('#!/', '')
+                .replace('?', '/')
                 .split('/'),
             nextSectionIndex;
         if (_this.$sections.filter('#' + hashMass[0]).length) {
